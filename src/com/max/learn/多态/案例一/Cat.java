@@ -1,4 +1,4 @@
-package com.max.learn.多态;
+package com.max.learn.多态.案例一;
 
 /**
  * @ClassName Cat
