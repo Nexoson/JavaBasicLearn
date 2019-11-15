@@ -1,4 +1,4 @@
-package com.max.learn.多态.案例一;
+package com.max.learn.多态.案例01;
 
 /**
  * @ClassName Dog
