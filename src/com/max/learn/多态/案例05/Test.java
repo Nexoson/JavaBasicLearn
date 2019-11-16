@@ -11,12 +11,13 @@ public class Test {
     public static void main(String[] args) {
 
         Base obj = new Sub();
-        // Base.x = 1
-        // Sub.x = 3
+        System.out.println(obj.x);
+        System.out.println(obj.getX());
+
+        // Base.x= 1
+        // Sub.x= 3
         // 2
         // 4
-        System.out.println(obj.x); //
-        System.out.println(obj.getX()); //
 
 
     }

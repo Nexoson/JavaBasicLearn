@@ -17,17 +17,33 @@ public class Test {
         C c = new C(); // C 的实例
         D d = new D(); // D 的实例
 
-        System.out.println("1--> " + a1.show(b)); // A and A
-        System.out.println("2--> " + a1.show(c)); // A and A
-        System.out.println("3--> " + a1.show(d)); // A and D
+        System.out.println("1--> " + a1.show(d));
+        System.out.println("2--> " + a1.show(c));
+        System.out.println("3--> " + a1.show(b));
         System.out.println();
-        System.out.println("4--> " + a2.show(b)); // B and A
-        System.out.println("5--> " + a2.show(c)); // B and A
-        System.out.println("6--> " + a2.show(d)); // A and D
+        System.out.println("4--> " + a2.show(d));
+        System.out.println("5--> " + a2.show(c));
+        System.out.println("6--> " + a2.show(b));
         System.out.println();
-        System.out.println("7--> " + b.show(b)); // B and B
-        System.out.println("8--> " + b.show(c)); // B and B
-        System.out.println("9--> " + b.show(d)); // A and D 父类有可用方法
+        System.out.println("7--> " + b.show(d));
+        System.out.println("8--> " + b.show(c));
+        System.out.println("9--> " + b.show(b));
 
+        // A and D
+        // A and A
+        // A and A
+
+        // A and D
+        // B and A
+        // B and A
+
+        // A and D
+        // B and B
+        // B and B
+
+
+        // 解析
+        // this.show(O)、 super.show(O)、 this.show((super)O)、 super.show((super)O)。
+        // 多态的话，有子类实现的方法就必须用子类的方法
     }
 }
