@@ -6,10 +6,10 @@ public class TransferTest02 {
                  Person person = new Person();
                  person.setAge(18);
                  System.out.println(person);
-//                 System.out.println(person.getAge());
-                 change(person);
-//                 changeAge(person);
-//                 System.out.println(person.getAge());
+                 System.out.println(person.getAge());
+//                 change(person);
+                 changeAge(person);
+                 System.out.println(person.getAge());
              }
 
               public static void change(Person p) {
