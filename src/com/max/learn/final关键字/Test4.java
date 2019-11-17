@@ -1,7 +1,7 @@
 package com.max.learn.final关键字;
 
 
-import com.max.learn.static关键字.Person1;
+import com.max.learn.static关键字.案例01.Person1;
 
 /**
  * @ClassName Test4

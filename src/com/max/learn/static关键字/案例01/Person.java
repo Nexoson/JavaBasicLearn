@@ -1,4 +1,4 @@
-package com.max.learn.static关键字;
+package com.max.learn.static关键字.案例01;
 
 
 import java.sql.Date;
