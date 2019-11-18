@@ -1,7 +1,7 @@
 package com.max.learn.继承.demo3;
 
 /**
- * @ClassName TestDemo
+ * @ClassName TestDemo02
  * @Descripition TODO
  * @Auther huangX
  * @Date 2019/11/14 23:09

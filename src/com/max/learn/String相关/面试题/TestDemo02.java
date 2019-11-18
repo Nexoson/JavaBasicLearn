@@ -3,13 +3,13 @@ package com.max.learn.String相关.面试题;
 import org.junit.Test;
 
 /**
- * @ClassName TestDemo
+ * @ClassName TestDemo02
  * @Descripition TODO
  * @Auther huangX
  * @Date 2019/7/23 23:27
  * @Version 1.0
  **/
-public class TestDemo {
+public class TestDemo02 {
 
     public static void main(String[] args) {
     }

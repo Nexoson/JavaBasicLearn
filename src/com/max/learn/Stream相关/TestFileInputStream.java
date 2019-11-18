@@ -23,7 +23,7 @@ public class TestFileInputStream {
         // 使用FileReader流来读取内容时，中英文都可以正确显示，因为Reader流里面的read()方法是一个字符一个字符地读取的，这样每次读取出来的都是一个完整的汉字，这样就可以正确显示了。
 
         try {
-            in = new FileInputStream("D:\\idea_center1\\JavaBasicLearn\\src\\com\\max\\learn\\测试\\TestDemo02.java");
+            in = new FileInputStream("D:\\idea_center1\\JavaBasicLearn\\src\\com\\max\\learn\\测试\\TestDemo.java");
 //            in = new FileReader("C:\\Users\\Administrator\\Desktop\\2020年4月备考课程.png");
 
         } catch (FileNotFoundException e) {
