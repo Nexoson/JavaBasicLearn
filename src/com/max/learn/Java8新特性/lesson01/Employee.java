@@ -16,10 +16,17 @@ public class Employee {
     // 年龄
     private int age;
 
+    public Employee() {
+    }
+
     public Employee(String name, float salary, int age) {
         this.name = name;
         this.salary = salary;
         this.age = age;
+    }
+
+    public Employee(Integer x) {
+        this.age = x;
     }
 
     @Override
