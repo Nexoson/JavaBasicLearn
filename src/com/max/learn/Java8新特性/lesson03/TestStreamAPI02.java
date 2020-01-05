@@ -21,10 +21,10 @@ public class TestStreamAPI02 {
             new Employee("赵六",15555.55f,25),
             new Employee("田七",14444.44f,24),
             new Employee("王八",13333.33f,23),
-            new Employee("黄九",12222.22f,22),
-            new Employee("黄九",12222.22f,22),
-            new Employee("黄九",12222.22f,22),
-            new Employee("黄九",12222.22f,22),
+            new Employee("黄九",10222.22f,22),
+            new Employee("黄九",11222.22f,24),
+            new Employee("黄九",12222.22f,26),
+            new Employee("黄九",13222.22f,18),
             new Employee("陈十",11111.11f,21)
     );
 
@@ -118,6 +118,33 @@ public class TestStreamAPI02 {
 
         System.out.println(list2);
     }
+
+
+    /**
+     * 排序
+     * sorted() -- 自然排序
+     * sorted(Comparator com) -- 定制排序(Comparator)
+     */
+    @Test
+    public void test07(){
+        List<String> list = Arrays.asList("ddd", "eee", "aaa", "bbb", "ccc");
+
+        list.stream()
+                .sorted()
+                .forEach(System.out::println);
+
+        System.out.println("-------------------------------------");
+
+        employees.stream()
+                .sorted((e1,e2) -> {
+                    if(e1.getName().equals(e2.getName())){
+                        return e1.getAge()-e2.getAge();
+                    }else{
+                        return e1.getName().compareTo(e2.getName());
+                    }
+                }).forEach(System.out::println);
+    }
+
 
     public static Stream<Character> filterCharacter(String str){
         List<Character> list = new ArrayList<>();
