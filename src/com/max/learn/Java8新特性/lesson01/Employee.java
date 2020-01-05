@@ -1,5 +1,7 @@
 package com.max.learn.Java8新特性.lesson01;
 
+import java.util.Objects;
+
 /**
  * @ClassName Employee
  * @Descripition 雇员
@@ -17,6 +19,21 @@ public class Employee {
     private int age;
 
     public Employee() {
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return Float.compare(employee.salary, salary) == 0 &&
+                age == employee.age &&
+                Objects.equals(name, employee.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, salary, age);
     }
 
     public Employee(String name, float salary, int age) {
