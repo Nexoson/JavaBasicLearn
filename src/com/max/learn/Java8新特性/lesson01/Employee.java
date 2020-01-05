@@ -1,5 +1,7 @@
 package com.max.learn.Java8新特性.lesson01;
 
+import com.sun.org.apache.xerces.internal.util.Status;
+
 import java.util.Objects;
 
 /**
@@ -17,8 +19,16 @@ public class Employee {
     private float salary;
     // 年龄
     private int age;
+    // 状态(枚举)
+    private Status status;
 
     public Employee() {
+    }
+
+    public enum Status{
+        FREE,
+        BUSY,
+        VOCATION;
     }
 
     @Override
@@ -42,6 +52,13 @@ public class Employee {
         this.age = age;
     }
 
+    public Employee(String name, float salary, int age, Status status) {
+        this.name = name;
+        this.salary = salary;
+        this.age = age;
+        this.status = status;
+    }
+
     public Employee(Integer x) {
         this.age = x;
     }
@@ -52,7 +69,16 @@ public class Employee {
                 "name='" + name + '\'' +
                 ", salary=" + salary +
                 ", age=" + age +
+                ", status=" + status +
                 '}';
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
     }
 
     public String getName() {
