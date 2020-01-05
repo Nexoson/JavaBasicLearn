@@ -3,6 +3,7 @@ package com.max.learn.Java8新特性.lesson03;
 import com.max.learn.Java8新特性.lesson01.Employee;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
@@ -66,10 +67,8 @@ public class TestStreamAPI02 {
                 .forEach(System.out::println);
     }
 
-
     @Test
-    public void test04() {
-
+    public void test04(){
         employees.stream()
                 .filter((e)->{
 //                    System.out.println("短路");
@@ -79,4 +78,55 @@ public class TestStreamAPI02 {
                 .distinct()
                 .forEach(System.out::println);
     }
+
+    @Test
+    public void test05(){
+        List<String> list = Arrays.asList("aaa", "bbb", "ccc", "ddd", "eee");
+
+        list.stream()
+                .map((str) -> str.toUpperCase())
+                .forEach(System.out::println);
+
+        System.out.println("--------------------------------");
+        employees.stream()
+                .map(Employee::getName)
+                .forEach(System.out::println);
+
+        System.out.println("--------------------------------");
+        Stream<Stream<Character>> stream = list.stream()
+                .map(TestStreamAPI02::filterCharacter);
+        stream.forEach((sm) -> {
+//            sm.forEach(System.out::println);
+        });
+
+        System.out.println("--------------------------------");
+        Stream<Character> stream1 = list.stream()
+                .flatMap(TestStreamAPI02::filterCharacter);
+
+        stream1.forEach(System.out::println);
+    }
+
+    @Test
+    public void test06(){
+
+        List<String> list = Arrays.asList("aaa", "bbb", "ccc", "ddd", "eee");
+
+        List list2 = new ArrayList();
+        list2.add(11);
+        list2.add(22);
+        list2.add(list);
+
+        System.out.println(list2);
+    }
+
+    public static Stream<Character> filterCharacter(String str){
+        List<Character> list = new ArrayList<>();
+
+        for(Character ch : str.toCharArray()){
+            list.add(ch);
+        }
+        return list.stream();
+    }
+
+
 }
