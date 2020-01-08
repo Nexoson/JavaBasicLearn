@@ -3,9 +3,12 @@ package com.max.learn.Java8新特性.lesson04;
 import com.max.learn.Java8新特性.lesson01.Employee;
 import org.junit.Test;
 
+import java.time.Duration;
+import java.time.Instant;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.LongStream;
 import java.util.stream.Stream;
 
 public class TestStreamAPI04 {
@@ -44,5 +47,26 @@ public class TestStreamAPI04 {
                 .reduce(Integer::sum);
 
         System.out.println(count.get());
+    }
+
+    /**
+     * 并行流
+     */
+    @Test
+    public void test03(){
+        Instant start = Instant.now();
+
+        long result = LongStream.rangeClosed(0, 9000000000L)
+                .parallel()      // 并行流(JDK1.7写法较复杂, JDK1.8之后简化写法)
+                .reduce(0, Long::sum);
+
+        System.out.println(result);
+
+        Instant end = Instant.now();
+        System.out.println("耗费时间为:" + Duration.between(start,end).toMillis()); // 单线程 3214  多线程(并行流) 653
+
+
+
+
     }
 }
