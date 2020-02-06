@@ -1,4 +1,4 @@
-package com.max.learn.thread.demo01;
+package com.max.learn.thread.lesson01.demo01;
 
 /**
  * @ClassName Station

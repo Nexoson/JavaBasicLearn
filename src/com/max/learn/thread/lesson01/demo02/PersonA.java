@@ -1,4 +1,4 @@
-package com.max.learn.thread.demo02;
+package com.max.learn.thread.lesson01.demo02;
 
 /**
  * @ClassName PersonA
