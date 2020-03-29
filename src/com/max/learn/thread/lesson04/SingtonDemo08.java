@@ -19,6 +19,5 @@ public enum SingtonDemo08 {
         return INSTANCE;
     }
 
-
     // 参考博客 https://www.cnblogs.com/chiclee/p/9097772.html
 }
