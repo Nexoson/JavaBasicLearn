@@ -11,7 +11,7 @@ public class SingtonDemo04 {
 
     private static SingtonDemo04 instance;
 
-    private SingtonDemo04() {
+    public SingtonDemo04() {
     }
 
     public synchronized static SingtonDemo04 getInstance(){
