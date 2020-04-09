@@ -14,10 +14,12 @@ public class Test {
         String a = "hello" +2;
         String b = temp + 2;
         String c = "hello2";
+        boolean flag = b.equals(c);
+        System.out.println(flag);
 
-        System.out.println( (a == b));
-        System.out.println( (a == c));
-        System.out.println( (c == b));
+//        System.out.println( (a == b));
+//        System.out.println( (a == c));
+//        System.out.println( (c == b));
 
 
 
