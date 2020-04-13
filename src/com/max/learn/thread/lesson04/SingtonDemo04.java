@@ -12,6 +12,7 @@ public class SingtonDemo04 {
     private static SingtonDemo04 instance;
 
     public SingtonDemo04() {
+        System.out.println("初始化");
     }
 
     public synchronized static SingtonDemo04 getInstance(){
@@ -19,5 +20,13 @@ public class SingtonDemo04 {
             instance = new SingtonDemo04();
         }
         return instance;
+    }
+
+    public static void main(String[] args) {
+        for(int i=0; i<200; i++){
+            new Thread(()->{
+                SingtonDemo04.getInstance();
+            }).start();;
+        }
     }
 }
