@@ -23,21 +23,28 @@ public class TestDemo01 {
         HashMap<Person,String> hashMap = new HashMap<>(129);
 
         int maxValue = Integer.MAX_VALUE;
+        System.out.println(MAXIMUM_CAPACITY);
         System.out.println(maxValue);
 
         int i = 16 >> 1;
-        System.out.println(i);
-/*        Person p1 = new Person("张三",18, "1");
+//        System.out.println(i);
+//        System.out.println(16 << 1);
+
+        Person p1 = new Person("张三",18, "1");
         Person p2 = new Person("李四",18, "1");
         Person p3 = new Person("王五",18, "1");
         Person p4 = new Person("赵六",18, "1");
         Person p5 = new Person("田七",18, "1");
 
         hashMap.put(p1,"aaa");
+        hashMap.put(p1,"bbb");
         hashMap.put(p2,"bbb");
         hashMap.put(p3,"ccc");
         hashMap.put(p4,"ddd");
         hashMap.put(p5,"eee");
+
+        String s = hashMap.get(p1);
+        System.out.println(s);
         for(Person key : hashMap.keySet()){
             System.out.println(key + "-->" + hashMap.get(key));
         }
@@ -46,7 +53,7 @@ public class TestDemo01 {
         hashMap.keySet();
         String str1 = "abc";
         String str2 = "bbb";
-        boolean flag = str1.equals(str2);*/
+        boolean flag = str1.equals(str2);
 
 
 /*        int cap = 65;
