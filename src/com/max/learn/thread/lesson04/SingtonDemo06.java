@@ -10,13 +10,10 @@ package com.max.learn.thread.lesson04;
 public class SingtonDemo06 {
 
     // 静态属性,volatile保证可见性和禁止重排序
-    private  static SingtonDemo06 instance = null;
-    private static int num = 0;
+    private volatile static SingtonDemo06 instance = null;
 
     // 私有化构造器
     private SingtonDemo06() {
-        num = 1;
-        System.out.println("初始化");
     }
 
     public static SingtonDemo06 getInstance() {
@@ -31,17 +28,6 @@ public class SingtonDemo06 {
                 }
             }
         }
-        if(num == 0){
-            System.out.println("未初始化");
-        }
         return instance;
-    }
-
-    public static void main(String[] args) {
-        for(int i=0; i<1000000 ; i++){
-            new Thread(()->{
-                SingtonDemo06.getInstance();
-            }).start();;
-        }
     }
 }
