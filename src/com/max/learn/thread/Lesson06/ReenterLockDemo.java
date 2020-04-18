@@ -8,7 +8,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @Auther huangX
  * @Date 2020/4/18 10:51
  * @Version 1.0
- * @Descripition TODO
+ * @Descripition 可重入锁
  **/
 public class ReenterLockDemo {
 
