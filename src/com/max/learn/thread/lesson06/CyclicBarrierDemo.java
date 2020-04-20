@@ -1,4 +1,4 @@
-package com.max.learn.thread.Lesson06;
+package com.max.learn.thread.lesson06;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;

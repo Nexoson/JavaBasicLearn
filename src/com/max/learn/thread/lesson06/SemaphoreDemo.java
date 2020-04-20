@@ -1,4 +1,4 @@
-package com.max.learn.thread.Lesson06;
+package com.max.learn.thread.lesson06;
 
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
