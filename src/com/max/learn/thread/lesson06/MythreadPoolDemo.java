@@ -17,13 +17,13 @@ public class MythreadPoolDemo {
         // 初始化5个固定线程的线程池
         // ExecutorService threadPool = Executors.newFixedThreadPool(5);
         // 只有一个线程的线程池
-        // ExecutorService threadPool = Executors.newSingleThreadExecutor();
+//         ExecutorService threadPool = Executors.newSingleThreadExecutor();
         // N个线程的线程池
         ExecutorService threadPool = Executors.newCachedThreadPool();
 
         // 模拟10个用户来办理业务,每个用户就是一个来自外部的请求线程
         try {
-            for (int i = 1; i <= 10; i++) {
+            for (int i = 1; i <= 1000; i++) {
                 threadPool.execute(() -> {
                     System.out.println(Thread.currentThread().getName() + "\t 办理业务");
                 });
