@@ -15,7 +15,11 @@ public class MythreadPoolDemo {
     public static void main(String[] args) {
 
         // 初始化5个固定线程的线程池
-        ExecutorService threadPool = Executors.newFixedThreadPool(5);
+        // ExecutorService threadPool = Executors.newFixedThreadPool(5);
+        // 只有一个线程的线程池
+        // ExecutorService threadPool = Executors.newSingleThreadExecutor();
+        // N个线程的线程池
+        ExecutorService threadPool = Executors.newCachedThreadPool();
 
         // 模拟10个用户来办理业务,每个用户就是一个来自外部的请求线程
         try {
