@@ -1,4 +1,4 @@
-package com.max.learn.其它.面试题;
+package com.max.learn.其它.面试题.static执行顺序;
 
 import org.junit.Test;
 
