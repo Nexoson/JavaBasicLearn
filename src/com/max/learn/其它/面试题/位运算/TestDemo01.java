@@ -1,4 +1,4 @@
-package com.max.learn.其它;
+package com.max.learn.其它.面试题.位运算;
 
 /**
  * @ClassName TestDemo01
