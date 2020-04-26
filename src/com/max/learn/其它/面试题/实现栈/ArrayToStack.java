@@ -39,7 +39,7 @@ public class ArrayToStack {
      * 5.有判断栈顶方法
      **/
 
-    // 指定栈的容量
+    // 指定栈的初始容量
     private int capacity = 8;
 
     // 栈中元素数组
