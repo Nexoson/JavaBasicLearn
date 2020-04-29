@@ -1,4 +1,4 @@
-package com.max.learn.design_patterns.factory_method01;
+package com.max.learn.design_patterns.factory_method.factory_method03;
 
 /**
  * @ClassName Dog
@@ -7,7 +7,7 @@ package com.max.learn.design_patterns.factory_method01;
  * @Version 1.0
  * @Descripition 小狗
  **/
-public class Dog implements Animal{
+public class Dog implements Animal {
     @Override
     public void say() {
         System.out.println("汪汪汪");

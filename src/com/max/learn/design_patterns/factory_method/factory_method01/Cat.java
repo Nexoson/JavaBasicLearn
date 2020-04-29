@@ -1,4 +1,4 @@
-package com.max.learn.design_patterns.factory_method04;
+package com.max.learn.design_patterns.factory_method.factory_method01;
 
 /**
  * @ClassName Animal
@@ -7,7 +7,7 @@ package com.max.learn.design_patterns.factory_method04;
  * @Version 1.0
  * @Descripition 猫
  **/
-public class Cat implements Animal {
+public class Cat implements Animal{
     @Override
     public void say() {
         System.out.println("喵喵喵");

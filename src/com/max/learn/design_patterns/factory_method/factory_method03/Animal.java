@@ -1,4 +1,4 @@
-package com.max.learn.design_patterns.factory_method02;
+package com.max.learn.design_patterns.factory_method.factory_method03;
 
 /**
  * @ClassName Animal

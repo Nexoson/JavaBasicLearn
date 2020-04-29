@@ -1,4 +1,4 @@
-package com.max.learn.design_patterns.factory_method03;
+package com.max.learn.design_patterns.factory_method.factory_method02;
 
 
 /**
@@ -11,7 +11,8 @@ package com.max.learn.design_patterns.factory_method03;
 public class FactoryDemo {
 
     public static void main(String[] args) {
-        Animal a = Factory.catProduce();
+        Factory fc = new Factory();
+        Animal a = fc.catProduce();
         if (null != a){
             a.say();
         }

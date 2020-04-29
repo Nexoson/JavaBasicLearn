@@ -1,4 +1,4 @@
-package com.max.learn.design_patterns.factory_method04;
+package com.max.learn.design_patterns.factory_method.factory_method03;
 
 
 /**
@@ -6,14 +6,12 @@ package com.max.learn.design_patterns.factory_method04;
  * @Auther huangX
  * @Date 2020/4/29 21:15
  * @Version 1.0
- * @Descripition 多个工厂方法模式
+ * @Descripition  静态工厂方法模式
  **/
 public class FactoryDemo {
 
     public static void main(String[] args) {
-
-        CatFactory fc = new CatFactory();
-        Animal a = fc.produce();
+        Animal a = Factory.catProduce();
         if (null != a){
             a.say();
         }

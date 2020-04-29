@@ -1,4 +1,4 @@
-package com.max.learn.design_patterns.factory_method02;
+package com.max.learn.design_patterns.factory_method.factory_method03;
 
 /**
  * @ClassName Factory
@@ -9,11 +9,11 @@ package com.max.learn.design_patterns.factory_method02;
  **/
 public class Factory {
 
-    public  Animal catProduce(){
+    public static Animal catProduce(){
         return new Cat();
     }
 
-    public  Animal dogProduce(){
+    public static Animal dogProduce(){
         return new Dog();
     }
 }
