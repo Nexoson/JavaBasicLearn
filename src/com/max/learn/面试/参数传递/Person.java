@@ -1,4 +1,4 @@
-package com.max.learn.参数传递;
+package com.max.learn.面试.参数传递;
 
 public class Person {
 
