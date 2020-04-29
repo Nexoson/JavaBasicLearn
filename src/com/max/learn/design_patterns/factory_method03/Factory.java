@@ -9,11 +9,11 @@ package com.max.learn.design_patterns.factory_method03;
  **/
 public class Factory {
 
-    public static Animal catSay(){
+    public static Animal catProduce(){
         return new Cat();
     }
 
-    public static Animal dogSay(){
+    public static Animal dogProduce(){
         return new Dog();
     }
 }

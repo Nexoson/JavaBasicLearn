@@ -11,7 +11,7 @@ package com.max.learn.design_patterns.factory_method03;
 public class FactoryDemo {
 
     public static void main(String[] args) {
-        Animal a = Factory.catSay();
+        Animal a = Factory.catProduce();
         if (null != a){
             a.say();
         }
