@@ -1,4 +1,4 @@
-package com.max.learn.其它.Idea_debug相关;
+package com.max.learn.Leetcode算法题.两数之和;
 
 import org.junit.Test;
 
