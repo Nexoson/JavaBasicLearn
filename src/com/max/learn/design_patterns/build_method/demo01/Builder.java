@@ -1,4 +1,4 @@
-package com.max.learn.design_patterns.build_method;
+package com.max.learn.design_patterns.build_method.demo01;
 
 /**
  * @ClassName Builder
