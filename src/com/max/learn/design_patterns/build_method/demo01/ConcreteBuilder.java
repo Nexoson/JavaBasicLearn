@@ -1,7 +1,7 @@
 package com.max.learn.design_patterns.build_method.demo01;
 
 /**
- * @ClassName ConcreteBuilder
+ * @ClassName MobikeBuilder
  * @Auther huangX
  * @Date 2020/4/29 23:22
  * @Version 1.0
