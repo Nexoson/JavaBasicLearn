@@ -5,7 +5,7 @@ package com.max.learn.design_patterns.adapter_method;
  * @Auther huangX
  * @Date 2020/5/4 16:22
  * @Version 1.0
- * @Descripition TODO
+ * @Descripition 让音乐播放器增加视频播放功能
  **/
 public class AudioPlayer implements MediaPlayer {
     MediaAdapter mediaAdapter;
