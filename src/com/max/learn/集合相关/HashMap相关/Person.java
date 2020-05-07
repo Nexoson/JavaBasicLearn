@@ -4,7 +4,7 @@ import java.util.Objects;
 
 /**
  * @ClassName Person
- * @Descripition TODO
+ * @Descripition 个人信息
  * @Auther huangX
  * @Date 2019/8/18 22:03
  * @Version 1.0
@@ -13,7 +13,10 @@ public class Person {
 
     private String name;
     private Integer age;
-    private String sex; // '1' 男 '0' 女
+    /**
+     * '1' 男 '0' 女
+     */
+    private String sex;
 
     public Person(String name, Integer age, String sex) {
         this.name = name;
@@ -23,8 +26,12 @@ public class Person {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Person person = (Person) o;
         return Objects.equals(name, person.name) &&
                 Objects.equals(age, person.age) &&
