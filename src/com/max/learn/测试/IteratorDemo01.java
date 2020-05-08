@@ -7,13 +7,13 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
- * @ClassName TestDemo04
+ * @ClassName IteratorDemo01
  * @Auther huangX
  * @Date 2020/5/8 12:17
  * @Version 1.0
  * @Descripition iterator迭代器(单线程)
  **/
-public class TestDemo04 {
+public class IteratorDemo01 {
 
     public static void main(String[] args) {
 

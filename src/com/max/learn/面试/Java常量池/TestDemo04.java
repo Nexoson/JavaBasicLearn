@@ -1,7 +1,7 @@
 package com.max.learn.面试.Java常量池;
 
 /**
- * @ClassName TestDemo04
+ * @ClassName IteratorDemo01
  * @Descripition TODO
  * @Auther huangX
  * @Date 2019/11/18 22:48
