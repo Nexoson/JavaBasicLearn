@@ -10,7 +10,8 @@ package com.max.learn.面试.面试题.static执行顺序;
 public class Test {
 
     public static void main(String[] args) {
-        System.out.println(S.abc);
+        int abc = S.abc;
+        System.out.println(abc);
     }
 
 }
