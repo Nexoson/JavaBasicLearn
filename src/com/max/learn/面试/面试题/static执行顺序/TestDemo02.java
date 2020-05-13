@@ -1,5 +1,6 @@
 package com.max.learn.面试.面试题.static执行顺序;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import org.junit.Test;
 
 /**
@@ -19,9 +20,11 @@ public class TestDemo02 {
     public void test01(){
         Byte a =127;
         Byte b =127;
-//        add(++a);
-        System.out.println((byte)(a+1));
-//        add(b);
+        System.out.println(a++);
+        add(a);
+        System.out.println(a + "");
+//        System.out.println((byte)(a+1));
+        add(b);
         System.out.println(b);
     }
 
