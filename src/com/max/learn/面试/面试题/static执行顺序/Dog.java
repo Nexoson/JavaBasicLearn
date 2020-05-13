@@ -8,9 +8,11 @@ package com.max.learn.面试.面试题.static执行顺序;
  * @createTime 2020年03月15日 10:23:00
  */
 public class Dog extends Animal{
+
     static {
         System.out.println("This is Dog Static area Code...");
     }
+
     {
         System.out.println("This is Dog General area Code...");
     }
