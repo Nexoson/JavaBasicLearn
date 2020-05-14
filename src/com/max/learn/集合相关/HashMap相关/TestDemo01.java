@@ -25,9 +25,10 @@ public class TestDemo01 {
         int maxValue = Integer.MAX_VALUE;
         System.out.println(MAXIMUM_CAPACITY);
         System.out.println(maxValue);
+        System.out.println("hashMap的长度为: "+hashMap.size());
 
         int i = 16 >> 1;
-//        System.out.println(i);
+//        System.out.println("i="+i);
 //        System.out.println(16 << 1);
 
         Person p1 = new Person("张三",18, "1");
