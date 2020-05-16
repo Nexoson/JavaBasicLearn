@@ -20,7 +20,7 @@ public class TestDemo01 {
 
     public static void main(String[] args) {
 
-        HashMap<Person,String> hashMap = new HashMap<>(129);
+        HashMap<Person,String> hashMap = new HashMap<>(32);
 
         int maxValue = Integer.MAX_VALUE;
         System.out.println(MAXIMUM_CAPACITY);
