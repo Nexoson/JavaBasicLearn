@@ -24,8 +24,13 @@ public class Test {
     @org.junit.Test
     public void test02(){
         Fu fu = new Zi(25,"张果");
-        System.out.println(fu.name);
-        System.out.println(fu.age);
+        if( fu instanceof Fu){
+            System.out.println("父类实例");
+        }else{
+            System.out.println("子类实例");
+        }
+/*        System.out.println(fu.name);
+        System.out.println(fu.age);*/
         fu.skill();
     }
 }

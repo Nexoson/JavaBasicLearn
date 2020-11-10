@@ -11,9 +11,10 @@ public class Fu {
     public int age;
     public String name;
 
-     Fu(int age, String name) {
+    Fu(int age, String name) {
         this.age = age;
         this.name = name;
+        System.out.println("父类构造");
     }
 
 
@@ -35,7 +36,9 @@ public class Fu {
         this.name = name;
     }
 
-    public void skill(){
-        System.out.println(this.name+"会开车");
-    };
+    public void skill() {
+        System.out.println(this.name + "会开车");
+    }
+
+    ;
 }

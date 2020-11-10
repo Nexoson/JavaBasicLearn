@@ -12,6 +12,7 @@ public class Zi extends Fu{
 
     Zi(int age, String name) {
         super(age, name);
+        System.out.println("子类构造");
     }
 
     @Override
