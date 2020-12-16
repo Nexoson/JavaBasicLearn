@@ -11,6 +11,22 @@ package com.max.learn.集合相关.HashMap相关;
 public class TestDemo02 {
 
     public static void main(String[] args) {
+
+
+        /**
+         * 位与运算符
+         * 异或(^)  与(&)  或(|)  非(~)
+         * https://www.runoob.com/java/java-operators.html
+         *
+         * >>：带符号右移。正数右移高位补0，负数右移高位补1。比如：
+         * 4 >> 1，结果是2；-4 >> 1，结果是-2。-2 >> 1，结果是-1。
+         *
+         * >>>：无符号右移。无论是正数还是负数，高位通通补0。
+         * 对于正数而言，>>和>>>没区别。
+         *
+         * 对于负数而言，-2 >>> 1，结果是2147483647（Integer.MAX_VALUE），-1 >>> 1，结果是2147483647（Integer.MAX_VALUE）。
+         **/
+
 /*        // 0010 0000
         int hash = 32;
         // 0001 0000
@@ -21,7 +37,7 @@ public class TestDemo02 {
         System.out.println(k);*/
 
 //        System.out.println(1>>>1);
-        int i = TestDemo02.tableSizeFor(13);
+        int i = TestDemo02.tableSizeFor(17);
         System.out.println(i);
 
     }

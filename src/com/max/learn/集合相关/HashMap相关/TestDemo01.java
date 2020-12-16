@@ -20,7 +20,7 @@ public class TestDemo01 {
 
     public static void main(String[] args) {
 
-        HashMap<Person,String> hashMap = new HashMap<>(32);
+        HashMap<String,String> hashMap = new HashMap<>(32);
 
         int maxValue = Integer.MAX_VALUE;
         System.out.println(MAXIMUM_CAPACITY);
@@ -37,16 +37,19 @@ public class TestDemo01 {
         Person p4 = new Person("赵六",18, "1");
         Person p5 = new Person("田七",18, "1");
 
-        hashMap.put(p1,"aaa");
-        hashMap.put(p1,"bbb");
-        hashMap.put(p2,"bbb");
-        hashMap.put(p3,"ccc");
-        hashMap.put(p4,"ddd");
-        hashMap.put(p5,"eee");
+        hashMap.put(p1.getName(),"aaa");
+        hashMap.put(p1.getName(),"bbb");
+        hashMap.put(p2.getName(),"bbb");
+        hashMap.put(p3.getName(),"ccc");
+        hashMap.put(p4.getName(),"ddd");
+        String eee = hashMap.put(p5.getName(), "eee");
+        System.out.println(eee);
+        String fff = hashMap.putIfAbsent(p5.getName(), "fff");
+        System.out.println(fff);
 
-        String s = hashMap.get(p1);
-        System.out.println(s);
-        for(Person key : hashMap.keySet()){
+//        String s = hashMap.get(p1.getName());
+//        System.out.println(s);
+        for(String key : hashMap.keySet()){
             System.out.println(key + "-->" + hashMap.get(key));
         }
 
