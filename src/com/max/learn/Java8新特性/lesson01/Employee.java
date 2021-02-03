@@ -1,6 +1,5 @@
 package com.max.learn.Java8新特性.lesson01;
 
-import com.sun.org.apache.xerces.internal.util.Status;
 
 import java.util.Objects;
 
@@ -13,13 +12,21 @@ import java.util.Objects;
  **/
 public class Employee {
 
-    // 姓名
+    /**
+     * 姓名
+     */
     private String name;
-    // 薪水
+    /**
+     * 薪水
+     */
     private float salary;
-    // 年龄
+    /**
+     * 年龄
+     */
     private int age;
-    // 状态(枚举)
+    /**
+     * 状态(枚举)
+     */
     private Status status;
 
     public Employee() {
@@ -33,8 +40,12 @@ public class Employee {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Employee employee = (Employee) o;
         return Float.compare(employee.salary, salary) == 0 &&
                 age == employee.age &&
