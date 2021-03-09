@@ -6,7 +6,7 @@ import java.util.Objects;
 /**
  * @ClassName Employee
  * @Descripition 雇员
- * @Auther huangX
+ * @Author huangX
  * @Date 2019/12/19 22:46
  * @Version 1.0
  **/

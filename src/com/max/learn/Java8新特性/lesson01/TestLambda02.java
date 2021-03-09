@@ -13,7 +13,8 @@ public class TestLambda02 {
 
     @Test
     public void test01(){
-        int num = 0; // jdk1.7前， 必须是final
+        // jdk1.7前， 必须是final
+        int num = 0;
 
         Runnable r = new Runnable() {
             @Override

@@ -39,6 +39,7 @@ public class TestLambda {
     public void test2(){
         Comparator<Integer> com = (x,y) -> Integer.compare(x,y);
         TreeSet<Integer> ts = new TreeSet<>(com);
+
     }
 
     @Test
@@ -49,7 +50,10 @@ public class TestLambda {
             System.out.println(employee);
         }
     }
-    //  优化方式一
+
+    /**
+     * 优化方式一
+     */
     @Test
     public void test4(){
         List<Employee> list = filterEmployees(employees,new FilterEmployeByAge(27));
@@ -59,7 +63,10 @@ public class TestLambda {
         }
     }
 
-    //  优化方式二: 匿名内部类
+
+    /**
+     * 优化方式二: 匿名内部类
+     */
     @Test
     public void test5(){
         List<Employee> list = filterEmployees(employees, new MyPredicate<Employee>() {
@@ -99,6 +106,7 @@ public class TestLambda {
     @Test
     public void testX(){
         Employee employee = new Employee("张三",8888.88f,28);
+        System.out.println(employee.toString());
     }
 
     public static List<Employee> employees  = Arrays.asList(
