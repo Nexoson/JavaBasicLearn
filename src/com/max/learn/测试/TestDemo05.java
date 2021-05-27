@@ -11,10 +11,9 @@ import org.junit.Test;
  */
 public class TestDemo05 {
     public static void main(String[] args) {
-
-//        test01();
-//        test02();
-        test03();
+        test01();  // 0
+        test02();  // 99
+        test03();  // 99 98
     }
 
     @Test
